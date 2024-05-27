@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+form label {
+  font-weight: bold;
+}
+
+
+form input,
+form select,
+form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form select[multiple] {
+  height: 150px;
+  width: 100%;
+}
+
+.form-check {
+  margin-bottom: 20px;
+}
+
+form button {
+  background-color: #007bff; /* Default blue color */
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+#response-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+}

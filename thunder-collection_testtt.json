@@ -1,0 +1,235 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "testtt",
+    "collectionId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+    "dateExported": "2024-05-25T07:45:12.481Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "80e915b1-9095-433d-ad5b-9e7506660986",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "create new account",
+            "url": "http://localhost:3000/Rentify/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-25T03:18:32.251Z",
+            "modified": "2024-05-25T07:39:25.262Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstname\": \"kapil\",\n  \"lastname\": \"dev\",\n  \"email\": \"rkapildev15@gmail.com\",\n  \"password\": \"kapildev\",\n  \"tag\": \"Buyer\",\n  \"phonenumber\": \"9962092061\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "542b2299-fb7d-4592-89fe-515d5f311720",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "signin",
+            "url": "http://localhost:3000/api/signin",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-25T03:18:46.623Z",
+            "modified": "2024-05-25T04:11:48.210Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"rkapildev9@gmail.com\",\n  \"password\": \"kapildev\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4dc5c2d8-6c27-4d87-8f25-4a8341e4ca50",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "room post",
+            "url": "http://localhost:3000/Rentify/Property",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-25T03:35:02.823Z",
+            "modified": "2024-05-25T07:37:16.290Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NTFkNzViODFjZjIxODI1NjNkMCIsInVzZXJUeXBlIjoiU2VsbGVyIiwiaWF0IjoxNzE2NjIyNjIxfQ.wKzfidlgwEZXh74tIV9f0QQdB7P1pZtE8uFS293Pyb4"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"propertyType\": \"Company\",\n  \"location\": [\n    \"adambakkam\",\n    \"Guindy\"\n  ],\n  \"amenities\": [\n    \"ac\",\n    \"wifi\",\n    \"bedsheet\",\n    \"pillow\",\n    \"drinkingwater\",\n    \"wash\",\n    \"parking\",\n    \"cctv\"\n  ],\n  \"rent\": 9000,\n  \"address\": \"No 1/6 bello street adambakkam chennai-8000\",\n  \"image\": [\n    \"https://media.designcafe.com/wp-content/uploads/2023/07/05141750/aesthetic-room-decor.jpg\",\n    \"https://media.designcafe.com/wp-content/uploads/2023/07/05141651/aesthetic-room-decor-with-light-fixtures.jpg\"\n  ],\n  \"numberOfBedrooms\": 2,\n  \"numberOfBathrooms\": 1,\n  \"nearbyHospitals\": [\n    \"Apollo Hospital\",\n    \"Fortis Malar Hospital\"\n  ],\n  \"nearbyColleges\": [\n    \"Anna University\",\n    \"IIT Madras\"\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8dd03f0a-8fcf-4e91-b951-110e3c61b870",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "room update",
+            "url": "http://localhost:3000/Rentify/Property/6651952c75b81cf2182563d3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-05-25T03:51:38.021Z",
+            "modified": "2024-05-25T07:37:35.986Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NTFkNzViODFjZjIxODI1NjNkMCIsInVzZXJUeXBlIjoiU2VsbGVyIiwiaWF0IjoxNzE2NjIyNjIxfQ.wKzfidlgwEZXh74tIV9f0QQdB7P1pZtE8uFS293Pyb4"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rent\": 9500,\n  \"numberOfBedrooms\": 3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3a4be159-8b57-4fcb-8f19-e1afd685d090",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "room delete",
+            "url": "http://localhost:3000/Rentify/6651952c75b81cf2182563d3",
+            "method": "DELETE",
+            "sortNum": 45000,
+            "created": "2024-05-25T03:53:17.293Z",
+            "modified": "2024-05-25T07:37:44.561Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NTFkNzViODFjZjIxODI1NjNkMCIsInVzZXJUeXBlIjoiU2VsbGVyIiwiaWF0IjoxNzE2NjIyNjIxfQ.wKzfidlgwEZXh74tIV9f0QQdB7P1pZtE8uFS293Pyb4"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rent\": 9500,\n  \"address\": \"New address 123 asdasdasdasda\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "2df7d337-d283-4241-b739-22b87afef017",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "get rooms of the specific seller",
+            "url": "http://localhost:3000/Rentify/properties/user",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-05-25T03:58:01.509Z",
+            "modified": "2024-05-25T07:37:52.117Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NTFkNzViODFjZjIxODI1NjNkMCIsInVzZXJUeXBlIjoiU2VsbGVyIiwiaWF0IjoxNzE2NjIyNjIxfQ.wKzfidlgwEZXh74tIV9f0QQdB7P1pZtE8uFS293Pyb4"
+                }
+            ]
+        },
+        {
+            "_id": "1bb0bf0b-b015-4165-9e1a-fe694165fe9b",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "get rooms with filter",
+            "url": "http://localhost:3000/Rentify/filters",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-05-25T04:05:39.653Z",
+            "modified": "2024-05-25T07:38:04.928Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NTFkNzViODFjZjIxODI1NjNkMCIsInVzZXJUeXBlIjoiU2VsbGVyIiwiaWF0IjoxNzE2NjIyNjIxfQ.wKzfidlgwEZXh74tIV9f0QQdB7P1pZtE8uFS293Pyb4"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"propertyType\": \"Family\",\n  \"location\": [\n    \"adambakkam\",\n    \"Guindy\"\n  ],\n  \"amenities\": [\n    \"ac\",\n    \"wifi\"\n  ],\n  \"minRent\": 9000,\n  \"maxRent\": 15000,\n  \"numberOfBedrooms\": 2,\n  \"numberOfBathrooms\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9d23d099-6430-4acc-a57c-4ca138266207",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "get details view of room details buyer",
+            "url": "http://localhost:3000/Rentify/Property/6651952c75b81cf2182563d6",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-05-25T04:06:40.885Z",
+            "modified": "2024-05-25T07:38:46.252Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NTFkNzViODFjZjIxODI1NjNkMCIsInVzZXJUeXBlIjoiU2VsbGVyIiwiaWF0IjoxNzE2NjIyNjIxfQ.wKzfidlgwEZXh74tIV9f0QQdB7P1pZtE8uFS293Pyb4"
+                }
+            ]
+        },
+        {
+            "_id": "26e43764-0054-4047-a5f8-e4956f079f9f",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "express intrest on room to show the seller details to buyer",
+            "url": "http://localhost:3000/Rentify/Property/interested/6651952c75b81cf2182563d6",
+            "method": "POST",
+            "sortNum": 75000,
+            "created": "2024-05-25T04:08:12.781Z",
+            "modified": "2024-05-25T07:39:32.517Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NWFkNzViODFjZjIxODI1NjNmNiIsInVzZXJUeXBlIjoiQnV5ZXIiLCJpYXQiOjE3MTY2MjI3NjV9.xBjsdzk56MUQ1x1pvyyM-a4EthSltWZO5KubAanLmfs"
+                }
+            ]
+        },
+        {
+            "_id": "ad358fdf-10de-4cc7-b3e6-b96686887af4",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "get all the intrested buyer details ",
+            "url": "http://localhost:3000/Rentify/interested/customers",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-25T05:02:08.438Z",
+            "modified": "2024-05-25T07:41:33.429Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NTFkNzViODFjZjIxODI1NjNkMCIsInVzZXJUeXBlIjoiU2VsbGVyIiwiaWF0IjoxNzE2NjIyNjIxfQ.wKzfidlgwEZXh74tIV9f0QQdB7P1pZtE8uFS293Pyb4"
+                }
+            ]
+        },
+        {
+            "_id": "4c54b45f-486f-4774-8333-a7b5445abbc7",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "get all the intrested seller",
+            "url": "http://localhost:3000/Rentify/seller/details",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-05-25T05:02:46.933Z",
+            "modified": "2024-05-25T07:42:00.934Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NWFkNzViODFjZjIxODI1NjNmNiIsInVzZXJUeXBlIjoiQnV5ZXIiLCJpYXQiOjE3MTY2MjI3NjV9.xBjsdzk56MUQ1x1pvyyM-a4EthSltWZO5KubAanLmfs"
+                }
+            ]
+        },
+        {
+            "_id": "02e25496-08dd-4d3c-90d6-c785ea1721b0",
+            "colId": "8741e4ca-c7d2-4737-9897-5dd77ccccf44",
+            "containerId": "",
+            "name": "likes of room",
+            "url": "http://localhost:3000/Rentify/Property/like/6651952c75b81cf2182563d6",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-05-25T05:08:00.902Z",
+            "modified": "2024-05-25T07:42:21.092Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTE5NWFkNzViODFjZjIxODI1NjNmNiIsInVzZXJUeXBlIjoiQnV5ZXIiLCJpYXQiOjE3MTY2MjI3NjV9.xBjsdzk56MUQ1x1pvyyM-a4EthSltWZO5KubAanLmfs"
+                }
+            ]
+        }
+    ],
+    "ref": "3xo_s0tuHwhEsijddezg_giOuT4czoRBtpGV7IYLGrI1d_CY_HkHAw_ANk0Ej8SDzJXXQAcADiuVrAwmtfvwdA"
+}

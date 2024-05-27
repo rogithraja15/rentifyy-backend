@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Filters</title>
+    <link rel="stylesheet" href="../style/filter.css">
+</head>
+
+<body>
+    <h1>Filter Properties</h1>
+    <form id="filterForm">
+        <label for="propertyType">Property Type:</label>
+        <select id="propertyType" name="propertyType">
+            <option value="Family">Family</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Company">Company</option>
+        </select>
+
+        <label for="minRent">Min Rent:</label>
+        <input type="number" id="minRent" name="minRent" value="1000">
+
+        <label for="maxRent">Max Rent:</label>
+        <input type="number" id="maxRent" name="maxRent" value="10000">
+
+        <label for="numberOfBedrooms">Number of Bedrooms:</label>
+        <input type="number" id="numberOfBedrooms" name="numberOfBedrooms" value="2">
+
+        <label for="numberOfBathrooms">Number of Bathrooms:</label>
+        <input type="number" id="numberOfBathrooms" name="numberOfBathrooms" value="1">
+
+        <button type="submit">Filter</button>
+    </form>
+
+    <h2>Results</h2>
+    <div class="container">
+        <h1>Property Listings</h1>
+        <div id="property-list" class="property-list"></div>
+    </div>
+
+    <!-- Modal for Property Details -->
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be filled dynamically -->
+        </div>
+    </div>
+
+    <script src="../scripts/filter.js"></script>
+</body>
+
+</html>

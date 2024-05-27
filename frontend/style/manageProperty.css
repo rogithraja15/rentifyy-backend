@@ -1,0 +1,36 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  padding: 60px 20px 20px 20px; 
+}
+
+.tabs__label {
+  text-align: start;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1;
+  width: 100%;
+  border-bottom: 3px solid #dddddd;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  color: #007bff; 
+  border-bottom: 2px solid #007bff; 
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
+}
